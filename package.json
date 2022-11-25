@@ -1,72 +1,36 @@
 {
-  
   "name": "canopy",
-  
   "description": "A 3d, voxel based social network that combines elements of Minecraft, Runescape, CAD/Architecture packages( Fusion360, Inventor, Solidworks, SketchUp ), and of course, Twitter.",
-  
   "version": "1.0.0",
-  
-  "main": "index.js",
-  
+  "private": true,
   "scripts": {
-  
-    
-  "test": "jest",
-  
-    
-  "server": "node src/server/index.js"
-  
+    "test": "jest",
+    "server": "node src/server/index.js",
+    "build": "webpack --config webpack.config.js"
   },
-  
   "repository": {
-  
-    
-  "type": "git",
-  
-    
-  "url": "git+https://github.com/kuberlog/canopy.git"
-  
+    "type": "git",
+    "url": "git+https://github.com/kuberlog/canopy.git"
   },
-  
   "keywords": [
-  
-    
-  "voxel",
-  
-    
-  "game",
-  
-    
-  "3d",
-  
-    
-  "engineering",
-  
-    
-  "cad"
-  
+    "voxel",
+    "game",
+    "3d",
+    "engineering",
+    "cad"
   ],
-  
   "author": "kuberlog",
-  
   "license": "MIT",
-  
   "bugs": {
-  
-    
-  "url": "https://github.com/kuberlog/canopy/issues"
-  
+    "url": "https://github.com/kuberlog/canopy/issues"
   },
-  
   "homepage": "https://github.com/kuberlog/canopy#readme",
-  
   "dependencies": {
-  
-    
-  "@babylonjs/core": "^5.0.0-rc.13",
-  
-    
-  "socket.io": "^4.5.4"
-  
+    "@babylonjs/core": "^5.0.0-rc.13",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   }
 }

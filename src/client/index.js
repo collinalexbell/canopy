@@ -1,3 +1,4 @@
+import {createScene} from "./scene";
 window.onload = () => {
   console.log("init");
   const canvas = document.getElementById("renderCanvas"); // Get the canvas element

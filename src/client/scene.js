@@ -1,4 +1,4 @@
-const createScene = (engine, canvas) => {
+export const createScene = (engine, canvas) => {
   const scene = new BABYLON.Scene(engine);
 
   const camera = new BABYLON.ArcRotateCamera(
@@ -15,7 +15,7 @@ const createScene = (engine, canvas) => {
     new BABYLON.Vector3(0, 1, 0)
   );
 
-  faceUV = [];
+  const faceUV = [];
   faceUV[0] = new BABYLON.Vector4(0.5, 0.0, 0.75, 1.0); //rear face
   faceUV[1] = new BABYLON.Vector4(0.0, 0.0, 0.25, 1.0); //front face
   faceUV[2] = new BABYLON.Vector4(0.25, 0, 0.5, 1.0); //right side
