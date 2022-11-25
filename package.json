@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "server": "node src/server/index.js",
-    "build": "webpack --config webpack.config.js"
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js && cp public/* dist/"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
   "homepage": "https://github.com/kuberlog/canopy#readme",
   "dependencies": {
     "@babylonjs/core": "^5.0.0-rc.13",
-    "socket.io": "^4.5.4"
+    "socket.io": "^4.5.4",
+    "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
     "webpack": "^5.75.0",

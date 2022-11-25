@@ -46,7 +46,7 @@ export const createScene = (engine, canvas) => {
   });
 
   const groundMat = new BABYLON.StandardMaterial("groundMat");
-  groundMat.diffuseColor = new BABYLON.Color3(0, 1, 0);
+  groundMat.diffuseColor = new BABYLON.Color3(0.5, 0.9, 0.3);
   ground.material = groundMat; //Place the material property of the ground
 
   const roofMat = new BABYLON.StandardMaterial("roofMat");

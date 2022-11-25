@@ -6,5 +6,16 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  mode: 'development'
+  mode: 'development',
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 9001,
+    headers: {
+        'Cache-Control': 'no-store',
+    },
+    liveReload: true
+  },
 };
