@@ -18,4 +18,16 @@ module.exports = {
     },
     liveReload: true
   },
+    module: {
+        rules: [
+          {
+            test: /.*\.(png|jpe?g|gif|mp3|html)$/i,
+            use: [
+              {
+                loader: 'file-loader',
+              },
+            ],
+          },
+        ],
+      },
 };
