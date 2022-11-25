@@ -1,0 +1,30 @@
+{
+  
+  "name": "canopy",
+  "description": "A 3d, voxel based social network that combines elements of Minecraft, Runescape, CAD/Architecture packages( Fusion360, Inventor, Solidworks, SketchUp ), and of course, Twitter.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuberlog/canopy.git"
+  },
+  "keywords": [
+    "voxel",
+    "game",
+    "3d",
+    "engineering",
+    "cad"
+  ],
+  "author": "kuberlog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuberlog/canopy/issues"
+  },
+  "homepage": "https://github.com/kuberlog/canopy#readme",
+  "dependencies": {
+    "@babylonjs/core": "^5.0.0-rc.13"
+  }
+}
